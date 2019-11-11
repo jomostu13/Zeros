@@ -13,7 +13,8 @@ function newtonsMethod(x, p) {
     b = a
     a = a - f(a)/df(a)
     console.log(a)
-  } while (a-b < p)
+  } while (Math.abs(a-b) > p)
+    return a
 }
 
 
